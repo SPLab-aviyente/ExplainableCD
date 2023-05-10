@@ -37,7 +37,8 @@ PROJECT_DIR = Path(__file__).parents[1]
 ####
 
 # Load the graph
-file_name = str(Path(PROJECT_DIR, "data", "celegans_frontal", "C-elegans-frontal.txt"))
+file_name = str(Path(PROJECT_DIR, "data", "inputs", "celegans_frontal", 
+                     "C-elegans-frontal.txt"))
 G = ig.Graph.Read(file_name, directed=False)
 
 # Community detection with Q_ER
