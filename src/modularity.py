@@ -18,6 +18,5 @@ def find_comms(G, res=1, null_model="cm", weights=None, n_runs=1):
             G, partition_type, resolution_parameter=res, weights=weights, 
             seed=rng.integers(low=1, high=1e6)
         )
-
         partitions[:, r] = C.membership
     return partitions
